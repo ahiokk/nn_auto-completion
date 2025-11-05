@@ -68,10 +68,9 @@ def split_80_10_10(dataset):
     print(f'Длина train - {len(train_df)} \nДлина val - {len(val_df)} \nДлина test - {len(test_df)}')
 
 def main():
-    dataset = pd.read_csv('data/raw_data.csv')
     source_path = "data/tweets.txt"
-
     from_txt_to_csv(source_path)
+    dataset = pd.read_csv('data/raw_data.csv')
     cleaning_dataset(dataset)
     split_80_10_10(dataset)
 
