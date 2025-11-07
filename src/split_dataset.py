@@ -73,6 +73,7 @@ def main():
     dataset = pd.read_csv('data/raw_data.csv')
     cleaning_dataset(dataset)
     split_80_10_10(dataset)
+    print('Датасет успешно разделен и очищен')
 
 if __name__ == '__main__':
     main()

@@ -1,5 +1,6 @@
-# виртуальные окружения
+data/*.csv
 .venv/
-venv/
-#Датасет
-data/
+.vscode/
+models/lstm_best.pt
+models/lstm_last.pt
+models/tweets.txtdata/tweets.txt
